@@ -1,0 +1,75 @@
+/* Стили списка товаров */
+.product-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .product-card {
+    background: #b5b4b4;
+    padding: 1rem;
+    border: 1px solid #bb0202;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-image span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-description {
+    display: -webkit-box;           /* Устанавливает блочное отображение */
+    -webkit-line-clamp: 3;          /* Обрезает текст после трех строк */
+    -webkit-box-orient: vertical;   /* Устанавливает вертикальную ориентацию */
+    overflow: hidden;               /* Обрезает текст, выходящий за границы */
+    text-overflow: ellipsis;        /* Добавляет многоточие в конце обрезанного текста */
+    max-height: 4.5em;              /* Ограничивает высоту блока (3 строки, по 1.5em каждая) */
+    line-height: 1.5em;             /* Устанавливает высоту строки */
+}
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-modal {
+    background: rgb(149, 149, 149);
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  

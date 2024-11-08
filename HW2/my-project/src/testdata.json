@@ -1,0 +1,67 @@
+[
+    {
+      "name": "Продукт 1",
+      "description": "Краткое описание продукта 1.",
+      "category": "Категория 1",
+      "quantity": 10,
+      "unit": "шт",
+      "imageUrl": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Продукт 2",
+      "description": "Очень длинное описание продукта 2, которое демонстрирует, как текст будет обрезаться в карточке.",
+      "category": "Категория 2",
+      "quantity": 5,
+      "unit": "кг",
+      "imageUrl": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Продукт 3",
+      "description": "Описание продукта 3.",
+      "category": "Категория 1",
+      "quantity": 0,
+      "unit": "л",
+      "imageUrl": null
+    },
+    {
+      "name": "Продукт 4",
+      "description": "Описание продукта 4, которое также очень длинное и требует обрезки при отображении.",
+      "category": "Категория 3",
+      "quantity": 20,
+      "unit": "шт",
+      "imageUrl": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Продукт 5",
+      "description": "Краткое описание продукта 5.",
+      "category": "Категория 2",
+      "quantity": 15,
+      "unit": "шт",
+      "imageUrl": null
+    },
+    {
+      "name": "Продукт 6",
+      "description": "Продукт 6 - очень популярный товар, который требует детального описания для понимания.",
+      "category": "Категория 4",
+      "quantity": 8,
+      "unit": "кг",
+      "imageUrl": "https://via.placeholder.com/150"
+    },
+    {
+      "name": "Продукт 7",
+      "description": "Описание продукта 7 с ограниченным количеством на складе.",
+      "category": "Категория 3",
+      "quantity": 2,
+      "unit": "л",
+      "imageUrl": null
+    },
+    {
+      "name": "Продукт 8",
+      "description": "Описание продукта 8, которое содержит все необходимые детали.",
+      "category": "Категория 4",
+      "quantity": 30,
+      "unit": "шт",
+      "imageUrl": "https://via.placeholder.com/150"
+    }
+  ]
+  
