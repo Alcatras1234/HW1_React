@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+   db:
+    image: postgis/postgis:15-3.3
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "amogus"
+      POSTGRES_PASSWORD: "1234"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - data:/var/lib/postgresql/data/pgdata
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "2750:5432"
+
+volumes:
+  data:
+    driver: local
