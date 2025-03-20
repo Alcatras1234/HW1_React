@@ -1,0 +1,5 @@
+{
+  "translation": {
+    "randomMessage": "У вас {{count}} непрочитанное {{count, plural, one {сообщение} few {сообщения} many {сообщений}}}. Последнее сообщение было {{date}}."
+  }
+}

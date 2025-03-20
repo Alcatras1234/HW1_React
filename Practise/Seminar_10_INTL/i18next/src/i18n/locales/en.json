@@ -1,0 +1,5 @@
+{
+  "translation": {
+    "randomMessage": "You have {{count}} unread {{count, plural, one {message} other {messages}}}. Last message was on {{date}}."
+  }
+}
