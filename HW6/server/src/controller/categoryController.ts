@@ -1,5 +1,6 @@
 import express from 'express';
 import { addCategory, deleteCategoryData, getCategoriesData, getCategoryData, putCategoryData } from '../service/categoryService';
+import { authenticateJWT } from '../service/authMiddleware';
 
 const router = express.Router();
 
@@ -13,10 +14,10 @@ export const categoryController = {
      deleteCategory: deleteCategoryData
 }
 
-router.post('/', addCategory);
-router.get('/', getCategoriesData);
-router.get('/:id', getCategoryData);
-router.put('/:id', putCategoryData);
-router.delete('/:id', deleteCategoryData);
+router.post('/', authenticateJWT, addCategory);
+router.get('/', authenticateJWT, getCategoriesData);
+router.get('/:id', authenticateJWT, getCategoryData);
+router.put('/:id', authenticateJWT, putCategoryData);
+router.delete('/:id', authenticateJWT, deleteCategoryData);
 
 export default router;
