@@ -10,7 +10,7 @@ import {
   deleteRefreshToken,
   getUser,
   saveToken,
-} from "../interface/pgInterface";
+} from "../interface/dataInterface";
 
 // Local Strategy for login
 passport.use(
